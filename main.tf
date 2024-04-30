@@ -11,6 +11,9 @@ resource "aws_instance" "demo" {
 }
 
 data "aws_ami" "demo" {
-    most_recent = true
-  
+  most_recent = true
+  filter {
+    name = "name"
+    values = "ubuntu"
+  }
 }
