@@ -14,6 +14,6 @@ data "aws_ami" "demo" {
   most_recent = true
   filter {
     name = "name"
-    values = "ubuntu"
+    values = ["ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server-20240423"]
   }
 }
