@@ -6,7 +6,7 @@ pipeline{
     stages{
         stage('Git Checkout'){
             steps{
-               git branch: 'main', url: 'https://github.com/Lordclintondevops/group_project.git'
+               git branch: 'main', url: 'https://github.com/Lordclintondevops/class_demo.git'
             }
         }
         stage('Terraform init'){
